@@ -83,6 +83,10 @@ button:hover {
   transition: var(--transition);
 }
 
+/* ----------------
+Header Start 
+------------------*/
+
 header {
   background-color: var(--secondary);
 }
@@ -138,3 +142,43 @@ nav {
 .banner-img {
   margin-top: 2rem;
 }
+/* ---------------
+Header End 
+------------------*/
+
+/*-------------
+ first Features Start
+ ------------- */
+ .team {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+.team-img {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.team-content {
+  width: 50%;
+}
+
+.team-content .quick-span {
+  color: var(--dark-light);
+  font-weight: 400;
+}
+
+.team-content .feature-span {
+  color: var(--primary);
+}
+
+.team-content p {
+  padding: 2rem 0;
+}
+/* --------------
+First  Features End
+------------------*/
