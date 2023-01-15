@@ -148,7 +148,7 @@ Header End
 ------------------*/
 
 /*-------------
- first Features Start
+ Team Features Start
  ------------- */
 .team {
   display: flex;
@@ -182,7 +182,11 @@ Header End
 }
 
 /* --------------
-First  Features End
+Team  Features End
+------------------*/
+
+/* ---------------
+  Features Start
 ------------------*/
 
 .feature {
@@ -218,8 +222,9 @@ First  Features End
 }
 
 .feature-img {
-  width: 50%;
   position: relative;
+  width: 50%;
+  
 }
 
 .large-btn {
@@ -228,7 +233,7 @@ First  Features End
   font-weight: 700;
   line-height: 1.5rem;
   padding-top: 2rem;
-  bottom: -2.5rem;
+  bottom: 6rem;
   left: -50px;
 }
 
@@ -242,7 +247,134 @@ First  Features End
   font-weight: 400;
 }
 
-/* award section start  */
+
+/*-----------------
+  Team Member
+ ------------------ */
+ .team-member-title{
+  margin-top: 4rem;
+  padding: 2rem 0;
+  text-align: center;
+ }
+.team-members{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 4rem;
+  gap: 2rem;
+}
+
+ .member {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.member:hover{
+  transform: scale(1.05);
+}
+
+.member .member-img {
+  position: relative;
+  font-size: 0;
+  color: var(--dark-light);
+}
+
+.member .member-img img {
+  width: 100%;
+  height: auto;
+}
+
+.member .member-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .5);
+  transition: all .3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.member:hover .member-social {
+  opacity: 1;
+}
+
+.member .member-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all .5s;
+  margin-top: 100px;
+}
+
+.member .member-social a.social-tw {
+  background: #00acee;
+}
+
+.member .member-social a.social-fb {
+  background: #3b5998;
+}
+
+.member .member-social a.social-li {
+  background: #0e76a8;
+}
+
+.member .member-social a.social-in {
+  background: #3f729b;
+}
+
+.member .member-social a.social-yt {
+  background: #c4302b;
+}
+
+.member .member-social a:last-child {
+  margin-right: 0;
+}
+
+.team:hover .member-social a {
+  margin-top: 0;
+}
+
+.member .member-social a:hover {
+  color: var(--white);
+  background:var(--primary);
+}
+
+.member .member-content {
+  padding: 1.5rem;
+}
+.member-content h3{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  color: var(--dark);
+}
+
+
+
+
+
+
+
+/*-----------------
+ award section start
+ -------------------*/
 .award-heading {
   padding: 2rem 0;
 }
@@ -307,8 +439,16 @@ First  Features End
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  filter: grayscale(100%);
+  
   gap: 6rem;
+}
+.sponsor-img{
+  filter: grayscale(100%);
+}
+.sponsor-img:hover{
+  filter: none;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 /* Sponsors section ends */
@@ -329,6 +469,23 @@ First  Features End
 }
 
 /* footer section ends */
+
+/* responsive for large device */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+.feature-img img{
+  z-index: -1;
+}
+
+  .large-btn {
+  position: inherit;
+  margin-top: -5rem;
+  margin-left: -3rem;
+  z-index: 1;
+}
+
+}
 
 /* responsive for medium device */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -373,6 +530,11 @@ First  Features End
     left: 50%;
     bottom: -2rem;
     transform: translate(-50%, 0);
+  }
+  .team-members{
+    
+    grid-template-columns: repeat(2, 1fr);
+    
   }
 
   .award-main {
@@ -455,6 +617,12 @@ First  Features End
     bottom: -2rem;
     transform: translate(-50%, 0);
   }
+  .team-members{
+    
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  
 
   .award-main {
     grid-template-columns: repeat(1, 1fr);
