@@ -233,7 +233,7 @@ Team  Features End
   font-weight: 700;
   line-height: 1.5rem;
   padding-top: 2rem;
-  bottom: 6rem;
+  bottom: -2rem;
   left: -50px;
 }
 
@@ -376,8 +376,6 @@ Team  Features End
 /*-----------------
   Team Member End
  ------------------ */
-
-
 
 
 /*-----------------
@@ -559,7 +557,7 @@ responsive for medium device Start
 
   .large-btn {
     left: 50%;
-    bottom: -2rem;
+    bottom: -7rem;
     transform: translate(-50%, 0);
   }
 
@@ -652,7 +650,7 @@ responsive for small device Start
 
   .large-btn {
     left: 50%;
-    bottom: -2rem;
+    bottom: -3rem;
     transform: translate(-50%, 0);
   }
 
