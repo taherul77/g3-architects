@@ -224,7 +224,7 @@ Team  Features End
 .feature-img {
   position: relative;
   width: 50%;
-  
+
 }
 
 .large-btn {
@@ -247,23 +247,27 @@ Team  Features End
   font-weight: 400;
 }
 
+/*-------------
+ Features End
+ ------------- */
 
 /*-----------------
-  Team Member
+  Team Member Start
  ------------------ */
- .team-member-title{
+.team-member-title {
   margin-top: 4rem;
   padding: 2rem 0;
   text-align: center;
- }
-.team-members{
+}
+
+.team-members {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 4rem;
   gap: 2rem;
 }
 
- .member {
+.member {
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -273,7 +277,8 @@ Team  Features End
   margin-bottom: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.member:hover{
+
+.member:hover {
   transform: scale(1.05);
 }
 
@@ -353,13 +358,14 @@ Team  Features End
 
 .member .member-social a:hover {
   color: var(--white);
-  background:var(--primary);
+  background: var(--primary);
 }
 
 .member .member-content {
   padding: 1.5rem;
 }
-.member-content h3{
+
+.member-content h3 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -367,13 +373,15 @@ Team  Features End
 }
 
 
-
+/*-----------------
+  Team Member End
+ ------------------ */
 
 
 
 
 /*-----------------
- award section start
+ Award Section Start
  -------------------*/
 .award-heading {
   padding: 2rem 0;
@@ -421,9 +429,15 @@ Team  Features End
   color: var(--dark-light);
 }
 
-/* award section */
+/*-----------------
+ Award Section End
+ -------------------*/
 
-/* Sponsors section  start*/
+
+
+/* -------------------
+Sponsors section  start
+----------------------*/
 .sponsor-container {
   margin-top: 6rem;
   text-align: center;
@@ -439,21 +453,29 @@ Team  Features End
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  
+
   gap: 6rem;
 }
-.sponsor-img{
+
+.sponsor-img {
   filter: grayscale(100%);
 }
-.sponsor-img:hover{
+
+.sponsor-img:hover {
   filter: none;
   transition: var(--transition);
   cursor: pointer;
 }
 
-/* Sponsors section ends */
+/* -------------------
+Sponsors section  End
+----------------------*/
 
-/* footer section starts */
+
+
+/*---------------------
+footer section starts 
+-----------------------*/
 
 .footer-container {
 
@@ -468,26 +490,35 @@ Team  Features End
   text-align: center;
 }
 
-/* footer section ends */
+/*---------------------
+footer section starts 
+-----------------------*/
 
-/* responsive for large device */
+/*---------------------------------
+ responsive for large device  Start
+ ----------------------------------*/
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
 
-.feature-img img{
-  z-index: -1;
-}
+  .feature-img img {
+    z-index: -1;
+  }
 
   .large-btn {
-  position: inherit;
-  margin-top: -5rem;
-  margin-left: -3rem;
-  z-index: 1;
-}
+    position: inherit;
+    margin-top: -5rem;
+    margin-left: -3rem;
+    z-index: 1;
+  }
 
 }
 
-/* responsive for medium device */
+/*------------------------------
+ responsive for large device End
+ -------------------------------*/
+/*-------------------------------
+responsive for medium device Start
+---------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: var(--container-md);
@@ -531,10 +562,11 @@ Team  Features End
     bottom: -2rem;
     transform: translate(-50%, 0);
   }
-  .team-members{
-    
+
+  .team-members {
+
     grid-template-columns: repeat(2, 1fr);
-    
+
   }
 
   .award-main {
@@ -552,7 +584,13 @@ Team  Features End
   }
 }
 
-/* responsive for small device */
+/*-------------------------------
+responsive for medium device End
+---------------------------------*/
+
+/*---------------------------------
+responsive for small device Start
+------------------------------------*/
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 3rem;
@@ -617,12 +655,13 @@ Team  Features End
     bottom: -2rem;
     transform: translate(-50%, 0);
   }
-  .team-members{
-    
+
+  .team-members {
+
     grid-template-columns: repeat(1, 1fr);
-    
+
   }
-  
+
 
   .award-main {
     grid-template-columns: repeat(1, 1fr);
@@ -643,3 +682,7 @@ Team  Features End
     gap: 2rem;
   }
 }
+
+/*-------------------------------
+responsive for Small device End
+---------------------------------*/
