@@ -142,6 +142,7 @@ nav {
 .banner-img {
   margin-top: 2rem;
 }
+
 /* ---------------
 Header End 
 ------------------*/
@@ -149,7 +150,7 @@ Header End
 /*-------------
  first Features Start
  ------------- */
- .team {
+.team {
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -179,6 +180,7 @@ Header End
 .team-content p {
   padding: 2rem 0;
 }
+
 /* --------------
 First  Features End
 ------------------*/
@@ -286,15 +288,17 @@ First  Features End
   font-weight: 600;
   color: var(--dark-light);
 }
+
 /* award section */
 
 /* Sponsors section  start*/
-.sponsor-container{
+.sponsor-container {
   margin-top: 6rem;
   text-align: center;
   margin-bottom: 1rem;
 }
-.sponsor-description{
+
+.sponsor-description {
   margin-top: 1.5rem;
 }
 
@@ -311,12 +315,13 @@ First  Features End
 
 /* footer section starts */
 
-.footer-container{
- 
- 
+.footer-container {
+
+
   background-color: var(--secondary);
 }
-.footer-description{
+
+.footer-description {
   margin-top: 3rem;
   margin-bottom: 4rem;
   padding: 1.5rem;
@@ -376,11 +381,12 @@ First  Features End
   }
 
   .award-box:hover {
-   
+
     transform: rotate(360deg);
   }
-  .sponsor-image{
-    grid-template-columns: repeat(2,1fr);
+
+  .sponsor-image {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -458,12 +464,13 @@ First  Features End
   .award-box {
     padding: 2rem 1rem;
   }
-  
+
   .award-box:hover {
     transform: scale(1.05);
   }
-  .sponsor-image{
-    grid-template-columns: repeat(1,1fr);
+
+  .sponsor-image {
+    grid-template-columns: repeat(1, 1fr);
     width: 70%;
     gap: 2rem;
   }
